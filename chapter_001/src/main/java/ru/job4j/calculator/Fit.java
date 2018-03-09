@@ -8,9 +8,9 @@ package ru.job4j.calculator;
  * @since 0.1
  */
 public class Fit {
-    private final double factor = 1.15; // коэфициент-множитель веса
-    private final int manSub = 100;
-    private final int womanSub = 110;
+    private static final double FACTOR = 1.15; // коэфициент-множитель веса
+    private static final int MAN_SUB = 100;
+    private static final int WOMAN_SUB = 110;
 
     /**
      * Идеальный вес для мужщины.
@@ -19,7 +19,7 @@ public class Fit {
      * @return идеальный вес.
      */
     double manWeight(double height) {
-        return ((height - manSub) * factor);
+        return ((height - MAN_SUB) * FACTOR);
     }
 
     /**
@@ -29,7 +29,7 @@ public class Fit {
      * @return идеальный вес.
      */
     double womanWeight(double height) {
-        return ((height - womanSub) * factor);
+        return ((height - WOMAN_SUB) * FACTOR);
     }
 
 }
