@@ -8,6 +8,9 @@ package ru.job4j.calculator;
  * @since 0.1
  */
 public class Converter {
+    // задаем курсы валют
+    private final int courseDollar = 60;
+    private final int courseEuro = 70;
 
     /**
      * Конвертируем рубли в евро.
@@ -16,7 +19,7 @@ public class Converter {
      * @return Евро.
      */
     public int rubleToEuro(int value) {
-        return (value / 70);
+        return (value / courseEuro);
     }
 
     /**
@@ -26,7 +29,7 @@ public class Converter {
      * @return Доллары
      */
     public int rubleToDollar(int value) {
-        return (value / 60);
+        return (value / courseDollar);
     }
 
     /**
@@ -36,7 +39,7 @@ public class Converter {
      * @return Рубли.
      */
     public int euroToRuble(int value) {
-        return (value * 70);
+        return (value * courseEuro);
     }
 
     /**
@@ -46,7 +49,7 @@ public class Converter {
      * @return Рубли
      */
     public int dollarToRuble(int value) {
-        return (value * 60);
+        return (value * courseDollar);
     }
 
 
