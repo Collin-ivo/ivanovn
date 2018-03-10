@@ -41,7 +41,7 @@ public class Triangle {
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             // написать формулу для расчета площади треугольника.
-            rsl = Math.sqrt( double p *( double p - double ab) *( double p - double ac) *( double p - double dc));
+            rsl = Math.sqrt(p *( p - ab) *( p - ac) *( p - bc));
         }
         return rsl;
     }
@@ -56,7 +56,16 @@ public class Triangle {
      * @param bc Длина от точки b c.
      * @return
      */
+
     private boolean exist(double ab, double ac, double bc) {
-        return false;
+        if (ab > 0 && ac > 0) {
+            if (bc > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 }
