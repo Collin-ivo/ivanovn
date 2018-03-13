@@ -18,6 +18,7 @@ public class SquareTest {
     public void whenFive() {
         Square square = new Square();
         int[] result = square.calculate(5);
-        assertThat(result, is(1)); // не могу понять что здесь нужно написать что бы вывести массив
+        int[] excepted = new int[]{1, 4, 9, 16, 25};
+        assertThat(result, is(excepted));
     }
 }
