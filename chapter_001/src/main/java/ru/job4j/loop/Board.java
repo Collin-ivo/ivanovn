@@ -16,8 +16,7 @@ public class Board {
                     //System.out.print("X");
                 } else if (h % 2 == 0 && w % 2 == 0) {
                     screen.append("X");
-                }
-                else {
+                } else {
                     screen.append(" ");
                    //System.out.print(" ");
                 }
