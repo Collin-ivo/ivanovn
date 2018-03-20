@@ -1,9 +1,9 @@
 package ru.job4j.array;
 
-        import org.junit.Test;
+import org.junit.Test;
 
-        import static org.hamcrest.core.Is.is;
-        import static org.junit.Assert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
 /**
  * FindLoopTest
@@ -15,12 +15,17 @@ package ru.job4j.array;
 
 public class FindLoopTest {
     @Test
-    public void whenFive() {
+    public void whenSixteen() {
         FindLoop find = new FindLoop();
-        int[] dat = {1, 4, 9, 16, 25};
-        int result = find.indexOf(dat, 9);
-
-        int excepted = 2;
-        assertThat(result, is(excepted));
+        int[] setup = {1, 3, 9, 16, 20, 25, 30};
+        int set = find.indexOf(setup, 16);
+        assertThat(set, is(3));
+    }
+    @Test
+    public void whenSix() {
+        FindLoop find = new FindLoop();
+        int[] setup = {1, 3, 9, 16, 20, 25, 30};
+        int set = find.indexOf(setup, 6);
+        assertThat(set, is(-1));
     }
 }
