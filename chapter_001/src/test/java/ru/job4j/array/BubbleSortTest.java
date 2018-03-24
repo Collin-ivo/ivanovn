@@ -21,5 +21,4 @@ public class BubbleSortTest {
             int[] resultArray = bSort.sort(new int[] {5, 1, 2, 7, 3});
             assertThat(resultArray, is(expectArray));
         }
-
-    }
+}
