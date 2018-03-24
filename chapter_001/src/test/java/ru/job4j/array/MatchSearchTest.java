@@ -28,4 +28,11 @@ public class MatchSearchTest {
         boolean result = word.containsWith();
         assertThat(result, is(false));
     }
+
+    @Test
+    public void whenSubMoreThanOriginThenFalse() {
+        MatchSearch word = new MatchSearch("Hello", "ellmonomino");
+        boolean result = word.containsWith();
+        assertThat(result, is(false));
+    }
 }

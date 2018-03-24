@@ -26,6 +26,10 @@ public class MatchSearch {
         boolean result = true;
         int valueIndex = 0;
         for (int index = 0; index < this.value.length; index++) {
+            if (this.value.length > this.data.length) {
+                result = false;
+                break;
+            }
             if ((this.value[valueIndex] == this.data[index])) {
                 result = true;
                 valueIndex++;
