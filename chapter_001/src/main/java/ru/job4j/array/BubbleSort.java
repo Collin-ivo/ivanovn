@@ -10,11 +10,9 @@ package ru.job4j.array;
 
 public class BubbleSort {
     /**
-     * Сортировка пузырьком
-     *
+     * Алгоритм сортировки пузырьком
      */
     public int[] sort(int[] array) {
-
         for (int j = 0; j < array.length - 1; j++) {
             int f = 0;
             for (int i = 0; i < array.length - 1; i++) {
@@ -30,8 +28,6 @@ public class BubbleSort {
                 break;
             }
         }
-
-
         return array;
     }
 }

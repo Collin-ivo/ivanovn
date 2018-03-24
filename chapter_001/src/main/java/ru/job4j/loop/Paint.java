@@ -1,6 +1,7 @@
 package ru.job4j.loop;
 
 import java.util.function.BiPredicate;
+
 /**
  * @author Nikolay Ivanov (n_13@bk.ru)
  * @version $Id$

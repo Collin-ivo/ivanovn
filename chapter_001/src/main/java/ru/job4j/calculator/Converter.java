@@ -52,6 +52,5 @@ public class Converter {
         return (value * RUB_USD);
     }
 
-
 }
 
