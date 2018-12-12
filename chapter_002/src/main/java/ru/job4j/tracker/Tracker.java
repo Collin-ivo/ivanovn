@@ -34,7 +34,7 @@ public class Tracker {
     }
 
     /**
-     * Метод реализаущий редактирование заявок
+     * Метод реализующий редактирование заявок
      *
      * @param item выбранная заявка
      * @param id   идентификационный номер редактируемой заявки
@@ -42,7 +42,7 @@ public class Tracker {
     public void replace(String id, Item item) {
         for (int index = 0; index < this.items.length; index++) {
             if (this.items[index].getId().equals(id)) {
-                this.items[index].setId(item.getId());
+                this.items[index] = item;
                 break;
             }
         }
@@ -140,7 +140,6 @@ public class Tracker {
     private String generateId() {
         //Реализовать метод генерации.
         long curTime = System.currentTimeMillis();
-        String rand = this.items[this.position].getId() + curTime;
-        return rand;
+        return Long.toString(curTime);
     }
 }

@@ -15,26 +15,25 @@ public class Item {
 
     Item() {
     }
-    Item(String nname, String ndesc, long nid) {
-        name = nname;
-        desc = ndesc;
-        id = nid;
+    Item(String inname, String indesc, long inid) {
+        this.name = inname;
+        this.desc = indesc;
+        this.id = inid;
     }
 
     public String getId() {
-        String getId = Long.toString(this.id);
-        return getId;
+        String gId = Long.toString(this.id);
+        return gId;
     }
     public String getName() {
-        return name;
+        return this.name;
     }
     public String getDesc() {
-        return desc;
+        return this.desc;
     }
 
-    public long setId(String in) {
+    public void setId(String in) {
         this.id = Long.valueOf(in);
-        return this.id;
     }
     public String setName(String na) {
         name = na;
